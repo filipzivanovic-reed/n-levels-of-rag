@@ -361,3 +361,10 @@ Other topics yet to be covered:
 5. Adding additional metadata.
 6. Summarization and Summary Indices
 7. Modeling business outcomes
+
+Potential topics:
+- Hybrid search tuning (keyword search vs semantic search) - although you've already covered that here [RAG is more than just embedding search](https://jxnl.github.io/instructor/blog/2023/09/17/rag-is-more-than-just-embedding-search), maybe to extend more with this [[Alpha Tuning]() ](https://blog.llamaindex.ai/llamaindex-enhancing-retrieval-performance-with-alpha-tuning-in-hybrid-search-in-rag-135d0c9b8a00)
+- Track clicks on citations?
+- Tracking of editing of initial question?
+- If it's a chat sessions, maybe to track session id, and question index (to see if performance degrades for longer chats)
+- You've mentioned once a great idea that sticked to me: "Embeddings are just a lookup table, think of it as a key or a hash" - we can imagine a golden dataset to build a Embeddings Index Ranker that would re-rank documents based upon this "lookup table" with an RRF that combines with HybridSearch and incorporates user feedback
